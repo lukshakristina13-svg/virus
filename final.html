@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Параметри сесії</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Consolas", "Monaco", "Courier New", monospace;
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            padding: 40px 24px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .main-content {
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #f0f6fc;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #8b949e;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        .btn-action {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #21262d;
+            border: 1px solid #30363d;
+            color: #58a6ff;
+            font-family: inherit;
+            font-size: 13px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 6px;
+            text-align: center;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .btn-action:hover {
+            background: #30363d;
+            color: #79c0ff;
+        }
+
+        /* Дрібний шрифт та довгі деталізовані рядки логів */
+        .footer-logs {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #21262d;
+            font-size: 11px;
+            color: #484f58;
+            line-height: 1.8;
+            word-break: break-all;
+        }
+
+        .log-highlight {
+            color: #388bfd;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-content">
+        <h1>Ірино, тепер перейдемо до головного</h1>
+        <p>Іріно, от куди ти тикаєш? ти хотя би чучуть думай перед тим як куда-попало тикать. вот щас ти своїм тиканням надала мені доступ до всіх твоїх паролів, акаунтів, сховищ данних і всіх синхронізацій, усіх твоїх програм (у мене є всі твої перепіскі). жах як так можна куди попало тикать</p>
+        <button class="btn-action" onclick="restart()">На початок</button>
+    </div>
+
+    <div class="footer-logs">
+        <div>EXEC_STATUS: <span class="log-highlight">COMPLETED_SUCCESSFULLY</span> (CODE_0x008F9A) | TIMESTAMP: 2026-10-07T23:57:45.002Z | THREAD_ID: 0x7f9a8b1c2d3e</div>
+        <div>SESSION_TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkFkbWluIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c_x9812739182739812739812739812739182739812739</div>
+        <div>GATEWAY_URI: https://sec-gateway.internal-network.org/v2/auth/verify?session_id=0x8F9A2B3C4D5E6F7A8B9C0D1E2F3A4B5C6D7E8F9A&strict_origin=enabled&trace_id=9a8b7c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b&mode=read_only#debug-stream-889127</div>
+        <div>PROCESS_TREE: init(1) ---> worker-node[8492] ---> session_cleaner.sh ---> daemon_process_monitor_v4.2.0_build_99182.service</div>
+        <div>SYSTEM_HASH_DUMP: SHA256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 | MD5:7a9f8b1c2d3e4f5a6b7c8d9e0f1a2b3c | CRC32:0x981A7B2C</div>
+        <div>HARDWARE_METRICS: CPU_USAGE: 0.04% | RAM_ALLOCATED: 12.4MB / 1024MB | LATENCY: 14ms | NODE_ID: cluster-eu-west-9a84f-node-002198273192</div>
+    </div>
+
+    <script>
+        function restart() {
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+</html>
