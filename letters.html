@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Параметри сесії 4</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Consolas", "Monaco", "Courier New", monospace;
+        }
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            padding: 40px 24px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .main-content {
+            max-width: 800px;
+        }
+        h1 {
+            color: #58a6ff;
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 24px;
+            color: #8b949e;
+        }
+        .highlight {
+            color: #f85149;
+            font-weight: bold;
+        }
+        .garbage-block {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #30363d;
+            font-size: 12px;
+            color: #484f58;
+            word-break: break-all;
+            line-height: 1.4;
+        }
+        .garbage-block a {
+            color: #388bfd;
+            text-decoration: underline;
+            margin: 0 4px;
+        }
+        .btn-action {
+            background-color: #238636;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+        .btn-action:hover {
+            background-color: #2ea043;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <h1>Аналіз даних: Етап 4</h1>
+        <p>Ірина в імені Акакія є дві букви а, от токо в повном імені в скороченом чи в церковном (якщо він християнин) я тобі не скажу.</p>
+        <button class="btn-action" onclick="restart()">На початок</button>
+    </div>
+
+    <div class="garbage-block">
+        <p>0x8F4A99BC... [SYS_ERR_NUL] <a href="#">#link_ref_9021</a> %$^&amp;*()_+#@! xQz_991823_v4</p>
+        <p>aK9#mL2_qx_0012 <a href="#">https://sys-trace.internal/debug?id=40912</a> &lt;DIR_ERR_OVERFLOW&gt; 01001001 01010010</p>
+        <p>@@@_undefined_ref_&amp;&amp;&amp; <a href="#">http://node-trace-89.local/logs</a> 998231_xYz_QWQ_#0081</p>
+    </div>
+
+    <script>
+        function restart() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
